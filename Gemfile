@@ -27,6 +27,7 @@ group :development, :test do
   gem 'pry'
   
 end
+gem 'rails_12factor', group: :production
   group :production do 
     gem 'pg'
     gem 'rails_12factor'
