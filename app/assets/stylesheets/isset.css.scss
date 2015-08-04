@@ -1,0 +1,318 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Russo+One|Play:400,700|Comfortaa|Audiowide);
+$bgDefault      : #222222;
+$bgMissionDiscovery: #ffffff;
+$bgHighlight    : #181818;
+$bgScrollHighlight    : #181818;
+$colDefault     : #ffffff;
+$colHighlight   : #ffffff;
+$dropDown       : true;
+
+@font-face {
+font-family: 'Sansation';
+src: font-url('Sansation_Regular.ttf') format('truetype');
+}
+
+//MAIN NAV BAR CSS
+.navbar-main {
+min-height: 90px;
+background-color: $bgDefault;
+border-color: $bgHighlight;
+.navbar-brand {
+}
+.navbar-text {
+color: $colDefault;
+}
+.navbar-nav {
+> li {
+> a {
+font-family:Sansation;
+color: $colDefault;
+font-size:20px;
+display:inline-block;
+padding-top:40px;
+height:90px;
+min-width:140px;
+text-align:center;
+&:hover,  &:focus {
+color: $colHighlight;
+background-color:$bgScrollHighlight;
+;
+}}
+@if $dropDown {
+> .dropdown-menu {
+background-color: $bgDefault;
+> li > a {
+color: $colDefault;
+&:hover,  &:focus {
+color: $colHighlight;
+background-color: $bgHighlight; }}
+.divider {
+background-color: $bgHighlight;}}}
+}
+> .active {
+> a, > a:hover, > a:focus {
+color: $colHighlight;
+background-color: $bgHighlight; }}
+> .open {
+> a, > a:hover, > a:focus {
+color: $colHighlight;
+background-color: $bgHighlight; }}}
+.navbar-toggle {
+border-color: $bgHighlight;
+&:hover, &:focus {
+background-color: $bgHighlight; }
+.icon-bar {
+background-color: $colDefault; }}
+.navbar-collapse,
+.navbar-form {
+border-color: $colDefault; }
+.navbar-link {
+color: $colDefault;
+&:hover {
+color: $colHighlight; }}}
+@media (max-width: 767px) {
+.navbar-main .navbar-nav .open .dropdown-menu {
+> li > a {
+color: $colDefault;
+&:hover, &:focus {
+color: $colHighlight; }}
+> .active {
+> a, > a:hover, > a:focus {
+color: $colHighlight;
+background-color: $bgHighlight; }}}
+}
+
+
+
+//MISSION DISCOVERY NAV BAR
+$bgMissionDiscoveryDefault      : #e7e7e7;
+$bgMissionDiscoveryHighlight    : #b4a174;
+$colMissionDiscoveryDefault     : #1e1e1e;
+$colMissionDiscoveryHighlight   : #ffffff;
+$MDScrollHighlight : #b4a174;
+$dropDown       : false;
+.navbar-missionDiscovery {
+background-color: $bgMissionDiscoveryDefault;
+border-color: $bgMissionDiscoveryHighlight;
+.navbar-brand {
+color: $colMissionDiscoveryDefault;
+&:hover, &:focus { 
+color: $colMissionDiscoveryHighlight; }}
+.navbar-text {
+color: $colMissionDiscoveryDefault; }
+.navbar-nav {
+> li {
+> a {
+font-family:Sansation;
+color: $colMissionDiscoveryDefault;
+
+&:hover,  &:focus {
+color: $colMissionDiscoveryHighlight;
+background-color:$MDScrollHighlight;}}
+@if $dropDown {
+> .dropdown-menu {
+background-color: $bgMissionDiscoveryDefault;
+> li > a {
+color: $colMissionDiscoveryDefault;
+&:hover,  &:focus {
+color: $colMissionDiscoveryHighlight;
+background-color: $bgMissionDiscoveryHighlight; }}
+.divider {
+background-color: $bgMissionDiscoveryHighlight;}}}
+}
+> .active {
+> a, > a:hover, > a:focus {
+color: $colMissionDiscoveryHighlight;
+background-color: $bgMissionDiscoveryHighlight; }}
+> .open {
+> a, > a:hover, > a:focus {
+color: $colMissionDiscoveryHighlight;
+background-color: $bgMissionDiscoveryHighlight; }}}
+.navbar-toggle {
+border-color: $bgMissionDiscoveryHighlight;
+&:hover, &:focus {
+background-color: $bgMissionDiscoveryHighlight; }
+.icon-bar {
+background-color: $colMissionDiscoveryDefault; }}
+.navbar-collapse,
+.navbar-form {
+border-color: $colMissionDiscoveryDefault; }
+.navbar-link {
+color: $colMissionDiscoveryDefault;
+&:hover {
+color: $colMissionDiscoveryHighlight; }}}
+@media (max-width: 767px) {
+.navbar-default .navbar-nav .open .dropdown-menu {
+> li > a {
+color: $colMissionDiscoveryDefault;
+&:hover, &:focus {
+color: $colMissionDiscoveryHighlight; }}
+> .active {
+> a, > a:hover, > a:focus {
+color: $colMissionDiscoveryHighlight;
+background-color: $bgMissionDiscoveryHighlight; }}}
+}
+
+.tabbable {
+    $bgMissionDiscoveryDefault      : #e7e7e7;
+$bgMissionDiscoveryHighlight    : #b4a174;
+$colMissionDiscoveryDefault     : #1e1e1e;
+$colMissionDiscoveryHighlight   : #ffffff;
+//tabs-188595
+
+.nav {
+    
+}
+.nav-tabs{
+   
+    > li > a {
+border-color:#bgMissionDiscoveryHighlight;
+background-color: $bgMissionDiscoveryDefault;
+color:$colMissionDiscoveryDefault;
+&:hover, &:focus {
+background-color: $bgMissionDiscoveryHighlight;
+color:$colMissionDiscoveryHighlight;
+}
+            > .active {
+        background-color: $bgMissionDiscoveryHighlight;
+color:$colMissionDiscoveryHighlight;
+}
+    }
+}
+
+.tab-content{
+   
+}
+.tab-pane{
+        
+}
+}
+
+//FOOTER CSS BELOW
+#navigationBottom{
+position:relative;
+bottom:0px;
+background-color:#222222;
+list-style:none;
+text-align:center;
+width:100%;
+min-width:1300px;
+min-height:300px;
+max-height:300px;
+margin:0px;
+padding:0px;
+padding-top:10px;
+}
+#navigationBottom ul.nav li{
+list-style:none;
+display:inline-block;
+zoom:1;
+.display:inline;
+min-width:140px;
+max-width:140px;
+margin:0px;
+padding:0px;
+margin-right:10px;
+margin-left:10px;
+:hover{
+    background-color:#222222;
+}
+}
+#navigationBottom a{
+text-decoration:none;
+}
+ul.nav li{
+text-align:left;
+vertical-align:top;
+
+}
+ul.single-col{
+display:inline-block;
+zoom:1;
+.display:inline;
+min-width:140px;
+max-width:140px;
+margin:0px;
+padding:0px;
+margin-right:10px;
+margin-left:10px;
+}
+ul.single-col li{
+margin:0px;
+padding:0px;
+min-width:140px;
+max-width:140px;
+list-style:none;
+margin-bottom:5px;
+text-align:left;
+border-bottom:1px #CCCCCC solid;
+}
+ul#spaceCentreBottomNav li:hover{
+background-color:$bgHighlight;
+}
+ul#missionDiscoveryBottomNav li:hover{
+background-color:$bgHighlight;
+}
+ul#aleBottomNav li:hover{
+background-color:$bgHighlight;
+}
+ul#spaceCampsBottomNav li:hover{
+background-color:$bgHighlight;
+}
+ul#astrovisitsBottomNav li:hover{
+background-color:$bgHighlight;
+}
+ul#tpdBottomNav li:hover{
+background-color:$bgHighlight;
+}
+ul#linksBottomNav li:hover{
+background-color:$bgHighlight;
+}
+ul.nav li a{
+color:#ffffff;
+font-weight:500;
+font-size:14px;
+}
+ul.single-col li a{
+min-width:100px;
+font-size:11px;
+color:#CCCCCC;
+}
+div#contact.grid_3 {
+padding-left: 40px;
+}
+#social {
+margin-top: 18px;
+width:180px;
+margin-left:-80px;
+}
+#socialBottom {
+position:absolute;
+float:right;
+bottom:0px;
+margin-right:10px;
+}
+#socialBottom h1{
+font-size:12px;
+font-weight:normal;
+margin:0px;
+padding-bottom:5px;
+text-align:left;
+}
+#socialBottom a img
+{
+margin-left:3px;
+}
+p.terms a {
+color:#CCCCCC;
+}
+p.terms a:hover {
+color:#999999;
+}
+
+body{
+padding-top:90px;
+}

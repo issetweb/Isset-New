@@ -1,0 +1,17 @@
+<nav class="navbar navbar-missionDiscovery">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+    	<li class="<%= 'active' if current_page?("/about") %>"><%= link_to "Overview", "/about" %></li>
+       <li class="<%= 'active' if current_page?("/blog") %>"><%= link_to "Astronauts", "/programmes/mission_discovery/astronauts" %></li>
+       <li class="<%= 'active' if current_page?("/contact") %>"><%= link_to "NASA Leaders & Scientists", "/contact" %></li>
+       <li class="<%= 'active' if current_page?("/blog") %>"><%= link_to "Experiment", "/blog" %></li>
+       <li class="<%= 'active' if current_page?("/contact") %>"><%= link_to "Host Your Own", "/contact" %></li>
+       <li class="<%= 'active' if current_page?("/blog") %>"><%= link_to "Newsroom", "/blog" %></li>
+       <li class="<%= 'active' if current_page?("/contact") %>"><%= link_to "Past Programmes", "/contact" %></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

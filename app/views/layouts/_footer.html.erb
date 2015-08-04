@@ -1,0 +1,79 @@
+<div id="navigationBottom" class="grid_12">
+   <ul class="nav">
+      <li style="margin-top:10px;"><a href=""><img src=<%= request.base_url+"/assets/footer/nsce.png" %> width="140px" /></a></li>
+      <li style="margin-top:10px;"><a href="http://www.isset.org/mission_discovery/"><img src=<%= request.base_url+"/assets/footer/mdfooter.png" %> width="140px" /></a></li>
+      <li style="text-align:center;"><a href="http://www.isset.org/astronaut_leadership_experience/"><img src=<%= request.base_url+"/assets/footer/alefooter.png" %> width="70px" /></a></li>
+      <li style="margin-top:10px;"><a href="http://www.isset.org/space_camps/"><img src=<%= request.base_url+"/assets/footer/spacecampfooter_small.png" %> width="125px" /></a></li>
+      <li style="margin-top:25px;"><a href="http://www.isset.org/Astronaut_Visits/"><img src=<%= request.base_url+"/assets/footer/astrovisitsfooter.png" %> width="135px" /></a></li>
+      <li style="margin-top:20px;"><a href="http://www.isset.org/teacher_programmes/Washington_2014.php"><img src=<%= request.base_url+"/assets/footer/teacherdevfooter.png" %> width="120px" /></a></li>
+      <li style="margin-top:10px;margin-top:40px;">Links</li>
+   </ul>
+   <ul class="single-col" id="spaceCentreBottomNav">
+      <li style="position:absolute; top:90px;">
+         <a href="">Overview</a>
+      </li>
+      <li style="position:absolute; top:110px;">
+         <a href="">Join an Upcoming Experience</a>
+      </li>
+      <li style="position:absolute; top:150px;">
+         <a href="">Build Your Own</a>
+      </li>
+   </ul>
+   <ul class="single-col" id="missionDiscoveryBottomNav">
+      <li style="position:absolute; top:90px;">
+         <a href="">Overview</a>
+      </li>
+      <li style="position:absolute; top:110px;">
+         <a href="">Newsroom</a>
+      </li>
+   </ul>
+   <ul class="single-col" id="aleBottomNav">
+      <li style="position:absolute; top:90px;">
+         <a href='<?php echo $server;?>astronaut_leadership_experience/'>Overview</a>
+      </li>
+      <li style="position:absolute; top:110px;">
+      <li style="position:absolute; top:110px;">
+         <a href='<?php echo $server;?>astronaut_leadership_experience/Lake_District/arrange.php'>Arrange Private</a>
+      </li>
+   </ul>
+   <ul class="single-col" id="spaceCampsBottomNav">
+      <li style="position:absolute; top:90px;"><a href="http://isset.org/space_camps/">Overview</a></li>
+      <li style="position:absolute; top:110px;">
+         <a href='http://isset.org/resources/Space%20Camp%20Application%20Form.pdf'>Application Form</a>
+      </li>
+   </ul>
+   <ul class="single-col" id="astrovisitsBottomNav">
+      <li style="position:absolute; top:90px;"><a href="http://isset.org/Astronaut_Visits/">Overview</a></li>
+   </ul>
+   <ul class="single-col" id="tpdBottomNav">
+      <li style="position:absolute; top:90px;"><a href="http://isset.org/teacher_programmes/Washington_2014.php">Overview</a></li>
+   </ul>
+   <ul class="single-col" id="linksBottomNav">
+      <li style="position:absolute; top:90px;"><a href="/home">Home</a></li>
+      <li style="position:absolute; top:110px;"><a href='http://issetdirectorblog.wordpress.com/'>Director's Blog</a></li>
+      <li style="position:absolute; top:130px;"><a href="/contact">Contact Us</a></li>
+      <li style="position:absolute; top:150px;"><a href="/about">About Us</a></li>
+   </ul>
+   <!-- **** --->
+   <div style="position:relative; top:120px; margin-left:auto; margin-right:auto; border-top:1px dashed #CCC; width:750px; text-align:center; font-size:11px; margin-bottom:0px; padding-bottom:0px;">
+      <p style="margin:0px; padding:0px; margin-top:10px; color:#ffffff;">
+         <img style="margin-top:-5px; margin-right:5px; height:25px;" src=<%= request.base_url+"/assets/ISSET_logo_justswoosh.png" %> />
+         Copyright &copy; <%= t=Time.now; t.strftime("%Y")%> ISSET Ltd.  All rights reserved.
+      </p>
+      <p style="font-size:10px; margin-top:10px;" class="terms">
+         <a href="<?php echo $server;?>terms_and_conditions.php">Terms &amp Conditions</a>
+      </p>
+   </div>
+   <div id="socialBottom" style="position:absolute; bottom:10px; right:80px;">
+      <a href="http://instagram.com/issetspace" target="_blank">
+      <img src=<%= request.base_url+"/assets/footer/insta_bottom.png" %> alt="i" /></a>
+      <a href="http://issetdirectorblog.wordpress.com/" target="_blank">
+      <img src=<%= request.base_url+"/assets/footer/wordpress_bottom.png" %> alt="w" /></a>
+      <a href="http://www.facebook.com/pages/Isset-International-Space-School-Educational-Trust/190935420935804" target="_blank">
+      <img src=<%= request.base_url+"/assets/footer/facebook_bottom.png" %> alt="f" /></a>
+      <a href="https://twitter.com/#!/IntSpaceSchool" target="_blank">
+      <img src=<%= request.base_url+"/assets/footer/twitter_bottom.png"%> alt="t" /></a>
+      <a href="http://www.youtube.com/intspaceschool" target="_blank">
+      <img src=<%= request.base_url+"/assets/footer/youtube_bottom.png" %> alt="y" /></a>
+   </div>
+</div>
