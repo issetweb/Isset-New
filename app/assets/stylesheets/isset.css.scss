@@ -2,43 +2,60 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Russo+One|Play:400,700|Comfortaa|Audiowide);
-$bgDefault      : #222222;
+$bgDefault      : rgba(0, 0, 0, 0.0);
 $bgMissionDiscovery: #ffffff;
 $bgHighlight    : #181818;
 $bgScrollHighlight    : #181818;
 $colDefault     : #ffffff;
-$colHighlight   : #ffffff;
+$colHighlight   : #ff7503;
 $dropDown       : true;
 
 @font-face {
 font-family: 'Sansation';
 src: font-url('Sansation_Regular.ttf') format('truetype');
 }
+@font-face {
+font-family: 'Nexa-Light';
+src: font-url('Nexa_Light.otf') format('opentype');
+}
+@font-face {
+font-family: 'Nexa-Bold';
+src: font-url('Nexa_Bold.otf') format('opentype');
+}
+@font-face {
+font-family: 'Frutiger';
+src: font-url('frutiger.ttf') format('truetype');
+}
 
 //MAIN NAV BAR CSS
 .navbar-main {
 min-height: 90px;
 background-color: $bgDefault;
-border-color: $bgHighlight;
+border-color: $bgDefault;
+color: $colDefault;
+font-family:Nexa-Light;
 .navbar-brand {
+   padding-right:930px;
+   
 }
+
 .navbar-text {
 color: $colDefault;
 }
 .navbar-nav {
 > li {
 > a {
-font-family:Sansation;
+font-family:Frutiger;
 color: $colDefault;
 font-size:20px;
 display:inline-block;
 padding-top:40px;
 height:90px;
-min-width:140px;
+width:auto;
 text-align:center;
 &:hover,  &:focus {
 color: $colHighlight;
-background-color:$bgScrollHighlight;
+background-color:$bgDefault;
 ;
 }}
 @if $dropDown {
@@ -94,6 +111,9 @@ $colMissionDiscoveryDefault     : #1e1e1e;
 $colMissionDiscoveryHighlight   : #ffffff;
 $MDScrollHighlight : #b4a174;
 $dropDown       : false;
+
+
+
 .navbar-missionDiscovery {
 background-color: $bgMissionDiscoveryDefault;
 border-color: $bgMissionDiscoveryHighlight;
@@ -314,5 +334,71 @@ color:#999999;
 }
 
 body{
-padding-top:90px;
+}
+.thumbnail .programmes{
+    height:300px;
+    width:300px;
+}
+
+.carousel-caption{
+    font-family:Frutiger;
+    
+}
+
+.carousel-caption > p {
+    
+    font-size:30px;
+}
+.carousel-caption > h4 {
+    font-size:42px;
+    font-weight:bold;
+    margin-top:-2px;
+    letter-spacing: 8px;
+}
+.ghost-button {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  padding-top: 13px;
+  color: #fff;
+  border: 1px solid #fff;
+  
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+              text-decoration: none;
+font-family:Nexa-Light;
+font-size:18px;
+margin-top:15px;
+margin-bottom:270px;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff; /* fallback */
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #fff; /* fallback */
+  border-color: rgba(255, 255, 255, 1.0);
+  color:#ffffff;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+              text-decoration: none;
+              
+}
+.ghost-button:focus {
+    color:#ffffff;
+     text-decoration: none;
+}
+
+.carousel-nav{
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    color:#ff0000;
+    margin-bottom:270px;
 }
